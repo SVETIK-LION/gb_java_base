@@ -3,26 +3,36 @@ package com.svetik_lion;
 import java.util.Scanner;
 
 /**
- * Вычислить n-ое треугольного число(сумма чисел от 1 до n),
- * n! (произведение чисел от 1 до n)
+ * Дана строка sql-запроса "select * from students where ".
+ * Сформируйте часть WHERE этого запроса, используя StringBuilder.
+ * Данные для фильтрации приведены ниже в виде json строки. Разберите строку, используя String.split.
+ * Если значение null, то параметр не должен попадать в запрос.
+ * Параметры для фильтрации: {"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"null"}
  */
 public class Main {
     public static void main(String[] args) {
-        // Запрашиваем конечное число у пользователя
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите конечное число n: ");
-        int num = in.nextInt();
+        // Запрашиваем строку с параметрами у пользователя
+        Scanner input = new Scanner(System.in);
+        System.out.print("Введите параметры для фильтрации: ");
+        String parameters = input.nextLine();
+        String [] s = parameters.split(", ");
 
-        int result_triangle = num * (num + 1) / 2;
+        StringBuilder result = new StringBuilder();
 
-        int result_factorial = 1;
-        for (int i = 1; i <= num; i++) {
-            result_factorial = result_factorial * i;
+        for(int i = 0; i < s.length - 1; i++) {
+            String [] s_result = s[i].split(":");
+            result.append(String.join(" ", s_result));
 
         }
-        System.out.printf("Треугольное число числа %d = %d\n", num, result_triangle);
-        System.out.printf("Факториал числа %d = %d\n", num, result_factorial);
+        String result_string = result.toString();
+        result_string = result_string.replace("\" \"", "' = '");
+        result_string = result_string.replace("\"\"", "' AND '");
+        result_string = result_string.replace("\"", "'");
+        result_string = result_string.replace("{", "");
 
-        in.close();
+
+        System.out.println(result_string);
+        input.close();
+
     }
 }

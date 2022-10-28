@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4f09cc3-ddfa-49bc-bfed-b2d96091ac1e" name="Changes" comment="task_1 is working">
+    <list default="true" id="b4f09cc3-ddfa-49bc-bfed-b2d96091ac1e" name="Changes" comment="task_2 is working">
+      <change afterPath="$PROJECT_DIR$/src/main/java/task_3/GetParsing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task_1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task_2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task_2/BubbleSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666782037003</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="task_2 is working">
+      <created>1666964110332</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666964110332</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,6 +83,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="task_1 is working" />
-    <option name="LAST_COMMIT_MESSAGE" value="task_1 is working" />
+    <MESSAGE value="task_2 is working" />
+    <option name="LAST_COMMIT_MESSAGE" value="task_2 is working" />
   </component>
 </project>

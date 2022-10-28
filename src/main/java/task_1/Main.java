@@ -1,6 +1,5 @@
 package task_1;
 
-import java.util.Scanner;
 
 /**
  * Дана строка sql-запроса "select * from students where ".
@@ -9,33 +8,35 @@ import java.util.Scanner;
  * Если значение null, то параметр не должен попадать в запрос.
  * Параметры для фильтрации: {"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"null"}
  */
+
 public class Main {
     public static void main(String[] args) {
-        // Запрашиваем строку с параметрами у пользователя
-        Scanner input = new Scanner(System.in);
-        System.out.print("Введите параметры для фильтрации: ");
-        String parameters = input.nextLine();
-        String [] parameters_massive = parameters.split(" ");
+        // Исходная строка
+        String parameters = "{\"name\":\"Ivanov\", \"country\":\"Russia\", \"city\":\"Moscow\", \"age\":\"null\"}";
+        String[] parameters_massive = parameters.replaceAll("[{}\"]", "").split(",");
 
-        StringBuilder result = new StringBuilder();
-        for(int i = 0; i < parameters_massive.length; i++) {
+        StringBuilder result = new StringBuilder("SELECT * FROM students WHERE (");
 
-            // Делаем преобразования строки в нужную форму для SQL
-            parameters_massive[i] = parameters_massive[i].replace("{", "");
-            parameters_massive[i] = parameters_massive[i].replace("}", "");
-            parameters_massive[i] = parameters_massive[i].replace("\"", "'");
-            parameters_massive[i] = parameters_massive[i].replace(":", " = ");
-            parameters_massive[i] = parameters_massive[i].replace(",", " AND ");
+        for (int i = 0; i < parameters_massive.length - 1; i++) {
+            int index_value = parameters_massive[i].indexOf(":");
 
-
-            // Если не содержит null, то добавляем в конечный результат
-            if (!parameters_massive[i].contains("null")) {
-                result.append(parameters_massive[i]);
+            String substring = parameters_massive[i].substring(index_value + 1);
+            if (substring.equals("null")) {
+                continue;
             }
+            else {
+                parameters_massive[i] = parameters_massive[i].replace(substring, "'" + substring + "'");
+            }
+
+            int result_length = result.length();
+            if (result_length % 2 != 0) {
+                result.append(" AND ");
+            }
+
+            result.append(parameters_massive[i].replace(":", " = "));
+
         }
-
+        result.append(");");
         System.out.println(result);
-
-        input.close();
     }
 }

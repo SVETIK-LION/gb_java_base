@@ -19,14 +19,7 @@
 //
 //public class GetParsing {
 //    public static void main(String[] args) {
-//        // Запрашиваем строку json у пользователя
-//        Scanner input = new Scanner(System.in);
-//        System.out.print("Введите строку: ");
-//        String jsonString = input.nextLine();
-//        String [] massive = jsonString.split(", ");
-//
-//        for (int i = 0; i < massive.length - 1; i++) {
-//            massive
+//        String parameters = "{\"фамилия\":\"Иванов\",\"оценка\":\"5\",\"предмет\":\"Математика\"}, \{\"фамилия\":", "\"Петрова\",\"оценка\":\"4\",\"предмет\":\"Информатика\"}, {\"фамилия\":\"Краснов\",\"оценка\":\"5\",\"предмет\":\"Физика\"}";
 //
 //        }
 //    }

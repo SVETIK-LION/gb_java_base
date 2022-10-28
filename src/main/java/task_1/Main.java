@@ -16,21 +16,24 @@ public class Main {
         String[] parameters_massive = parameters.replaceAll("[{}\"]", "").split(",");
 
         StringBuilder result = new StringBuilder("SELECT * FROM students WHERE (");
+        int start_length = result.length();
 
         for (int i = 0; i < parameters_massive.length - 1; i++) {
             int index_value = parameters_massive[i].indexOf(":");
 
             String substring = parameters_massive[i].substring(index_value + 1);
+
+            int end_length = result.length();
+            if (end_length != start_length) {
+                result.append(" AND");
+            }
+
             if (substring.equals("null")) {
                 continue;
             }
+
             else {
                 parameters_massive[i] = parameters_massive[i].replace(substring, "'" + substring + "'");
-            }
-
-            int result_length = result.length();
-            if (result_length % 2 != 0) {
-                result.append(" AND ");
             }
 
             result.append(parameters_massive[i].replace(":", " = "));

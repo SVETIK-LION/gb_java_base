@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b4f09cc3-ddfa-49bc-bfed-b2d96091ac1e" name="Changes" comment="Change task_1, task_2, task_3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task_3/GetParsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task_3/GetParsing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task_2/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task_2/BubbleSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +41,10 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.appearance&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.GetParsing">
+  <component name="RunManager">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="task_2.BubbleSort" />
       <module name="gb_java_base_2022" />
@@ -59,37 +58,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetParsing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task_3.GetParsing" />
-      <module name="gb_java_base_2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="task_3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task_1.Main" />
-      <module name="gb_java_base_2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="task_1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GetParsing" />
         <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -102,63 +73,6 @@
       <option name="presentableId" value="Default" />
       <updated>1666712424790</updated>
     </task>
-    <task id="LOCAL-00001" summary="task_1 is working">
-      <created>1666782037003</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1666782037003</updated>
-    </task>
-    <task id="LOCAL-00002" summary="task_2 is working">
-      <created>1666964110332</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1666964110332</updated>
-    </task>
-    <task id="LOCAL-00003" summary="task_3 is added">
-      <created>1666965741884</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1666965741884</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Change task_1">
-      <created>1666972490313</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1666972490313</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Change task_1">
-      <created>1666981387907</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1666981387907</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Change task_1">
-      <created>1666984031439</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1666984031439</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Change task_3">
-      <created>1666984276186</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1666984276186</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Change task_1, task_2, task_3">
-      <created>1666987542301</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1666987542301</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,14 +85,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="task_1 is working" />
-    <MESSAGE value="task_2 is working" />
-    <MESSAGE value="task_3 is added" />
-    <MESSAGE value="Change task_1" />
-    <MESSAGE value="Change task_3" />
-    <MESSAGE value="Change task_1, task_2, task_3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change task_1, task_2, task_3" />
   </component>
 </project>

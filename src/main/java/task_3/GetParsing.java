@@ -24,7 +24,7 @@ public class GetParsing {
                 " {\"фамилия\":\"Петрова\",\"оценка\":\"5\",\"предмет\":\"Информатика\"}," +
                 " {\"фамилия\":\"Краснов\",\"оценка\":\"3\",\"предмет\":\"Физика\"}";
 
-        String[] parameters_massive = parameters.replaceAll("\"", "").split(" ");
+        String[] parameters_massive = parameters.replaceAll("\"", "").split(", ");
         StringBuilder result = new StringBuilder();
 
         for (int i = 0; i <= parameters_massive.length - 1; i++) {
@@ -34,9 +34,8 @@ public class GetParsing {
             parameters_massive[i] = parameters_massive[i].replace(":", " ");
             parameters_massive[i] = parameters_massive[i].replace(",", " ");
             parameters_massive[i] = parameters_massive[i].replace("{", "");
-            parameters_massive[i] = parameters_massive[i].replace("}", "\n");
+            parameters_massive[i] = parameters_massive[i].replace("}", ".\n");
             result.append(parameters_massive[i]);
-
         }
 
         System.out.println(result);

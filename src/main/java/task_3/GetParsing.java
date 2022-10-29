@@ -1,6 +1,8 @@
 package task_3;
 
 
+import java.util.Arrays;
+
 /** Дана строка json:
 
  [{"фамилия":"Иванов","оценка":"5","предмет":"Математика"}, {"фамилия":"Петрова","оценка":"4","предмет":"Информатика"},
@@ -22,10 +24,22 @@ public class GetParsing {
                 " {\"фамилия\":\"Петрова\",\"оценка\":\"5\",\"предмет\":\"Информатика\"}," +
                 " {\"фамилия\":\"Краснов\",\"оценка\":\"3\",\"предмет\":\"Физика\"}";
 
-        String[] parameters_massive = parameters.replaceAll("\"", "").split("[}, {]");
-        for (String s : parameters_massive) {
-            System.out.println(s);
-        }
+        String[] parameters_massive = parameters.replaceAll("\"", "").split(" ");
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i <= parameters_massive.length - 1; i++) {
+            parameters_massive[i] = parameters_massive[i].replace("фамилия", "Студент");
+            parameters_massive[i] = parameters_massive[i].replace("оценка", "получил");
+            parameters_massive[i] = parameters_massive[i].replace("предмет", "по предмету");
+            parameters_massive[i] = parameters_massive[i].replace(":", " ");
+            parameters_massive[i] = parameters_massive[i].replace(",", " ");
+            parameters_massive[i] = parameters_massive[i].replace("{", "");
+            parameters_massive[i] = parameters_massive[i].replace("}", "\n");
+            result.append(parameters_massive[i]);
 
         }
-    }
+
+        System.out.println(result);
+
+            }
+        }

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4f09cc3-ddfa-49bc-bfed-b2d96091ac1e" name="Changes" comment="Change task_3">
+    <list default="true" id="b4f09cc3-ddfa-49bc-bfed-b2d96091ac1e" name="Changes" comment="Change task_1, task_2, task_3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task_2/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task_2/BubbleSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/task_3/GetParsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task_3/GetParsing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +45,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.appearance&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BubbleSort">
+  <component name="RunManager" selected="Application.GetParsing">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="task_2.BubbleSort" />
       <module name="gb_java_base_2022" />
@@ -88,8 +87,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.GetParsing" />
+        <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -152,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666984276186</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Change task_1, task_2, task_3">
+      <created>1666987542301</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666987542301</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +178,7 @@
     <MESSAGE value="task_3 is added" />
     <MESSAGE value="Change task_1" />
     <MESSAGE value="Change task_3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change task_3" />
+    <MESSAGE value="Change task_1, task_2, task_3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change task_1, task_2, task_3" />
   </component>
 </project>

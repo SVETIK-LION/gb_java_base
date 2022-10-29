@@ -1,28 +1,45 @@
-package com.svetik_lion;
+package task_1;
 
-import java.util.Scanner;
 
 /**
- * Вычислить n-ое треугольного число(сумма чисел от 1 до n),
- * n! (произведение чисел от 1 до n)
+ * Дана строка sql-запроса "select * from students where ".
+ * Сформируйте часть WHERE этого запроса, используя StringBuilder.
+ * Данные для фильтрации приведены ниже в виде json строки. Разберите строку, используя String.split.
+ * Если значение null, то параметр не должен попадать в запрос.
+ * Параметры для фильтрации: {"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"null"}
  */
+
 public class Main {
     public static void main(String[] args) {
-        // Запрашиваем конечное число у пользователя
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите конечное число n: ");
-        int num = in.nextInt();
+        // Исходная строка
+        String parameters = "{\"name\":\"Ivanov\", \"country\":\"Russia\", \"city\":\"Moscow\", \"age\":\"null\"}";
+        String[] parameters_massive = parameters.replaceAll("[{}\"]", "").split(",");
 
-        int result_triangle = num * (num + 1) / 2;
+        StringBuilder result = new StringBuilder("SELECT * FROM students WHERE (");
+        int start_length = result.length();
 
-        int result_factorial = 1;
-        for (int i = 1; i <= num; i++) {
-            result_factorial = result_factorial * i;
+        for (int i = 0; i < parameters_massive.length - 1; i++) {
+            int index_value = parameters_massive[i].indexOf(":");
+
+            String substring = parameters_massive[i].substring(index_value + 1);
+
+            int end_length = result.length();
+            if (end_length != start_length) {
+                result.append(" AND");
+            }
+
+            if (substring.equals("null")) {
+                continue;
+            }
+
+            else {
+                parameters_massive[i] = parameters_massive[i].replace(substring, "'" + substring + "'");
+            }
+
+            result.append(parameters_massive[i].replace(":", " = "));
 
         }
-        System.out.printf("Треугольное число числа %d = %d\n", num, result_triangle);
-        System.out.printf("Факториал числа %d = %d\n", num, result_factorial);
-
-        in.close();
+        result.append(");");
+        System.out.println(result);
     }
 }

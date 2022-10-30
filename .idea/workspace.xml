@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4f09cc3-ddfa-49bc-bfed-b2d96091ac1e" name="Changes" comment="task_3 is working">
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_1/MergeSort.java" afterDir="false" />
+    <list default="true" id="b4f09cc3-ddfa-49bc-bfed-b2d96091ac1e" name="Changes" comment="task_1 is completed without ArroyList">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task_1/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667067992601</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="task_1 is completed without ArroyList">
+      <created>1667126317682</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667126317682</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +140,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="task_1 is working" />
     <MESSAGE value="task_3 is working" />
-    <option name="LAST_COMMIT_MESSAGE" value="task_3 is working" />
+    <MESSAGE value="task_1 is completed without ArroyList" />
+    <option name="LAST_COMMIT_MESSAGE" value="task_1 is completed without ArroyList" />
   </component>
 </project>

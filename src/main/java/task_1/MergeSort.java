@@ -67,6 +67,7 @@ public class MergeSort {
             array_index++;
         }
 
+        // Если осталась часть левого или правого массива, то добавляем ее в основной массив
         for(int left_post_idx = left_index; left_post_idx < left_arr_length; left_post_idx++) {
             array[array_index++] = left_array[left_post_idx];
         }

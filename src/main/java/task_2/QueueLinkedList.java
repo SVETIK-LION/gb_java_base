@@ -1,6 +1,7 @@
 package task_2;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 
 /* Реализуйте очередь с помощью LinkedList со следующими методами:
@@ -10,13 +11,13 @@ first() - возвращает первый элемент из очереди, 
  */
 
 
-public class Queue {
+public class QueueLinkedList {
     public static void main(String[] args){
-        LinkedList<String> Queue_lin_list = new LinkedList<>();
+        Queue<Integer> Queue_lin_list = new LinkedList<>();
         // Добавляем элементы:
-        enqueue(Queue_lin_list, "some_string");
-        enqueue(Queue_lin_list, "other_some_string");
-        enqueue(Queue_lin_list, "third_some_string");
+        enqueue(Queue_lin_list, 1);
+        enqueue(Queue_lin_list, 2);
+        enqueue(Queue_lin_list, 3);
         System.out.printf("Очередь после добавления элементов: %s\n", Queue_lin_list);
 
         // Возвращаем и удаляем первый элемент из очереди:
@@ -27,16 +28,16 @@ public class Queue {
         System.out.printf("Первый элемент в очереди: %s\n", first(Queue_lin_list));
 }
 
-    private static void enqueue(LinkedList<String> Queue_lin_list, String elem){
-        Queue_lin_list.addFirst(elem);
+    private static void enqueue(Queue<Integer> Queue_lin_list, int elem){
+        Queue_lin_list.add(elem);
 
     }
 
-    private static String dequeue(LinkedList<String> Queue_lin_list){
-        return Queue_lin_list.pollLast();
+    private static Integer dequeue(Queue<Integer> Queue_lin_list){
+        return Queue_lin_list.poll();
     }
 
-    private static String first(LinkedList<String> Queue_lin_list){
-        return Queue_lin_list.peekLast();
+    private static Integer first(Queue<Integer> Queue_lin_list){
+        return Queue_lin_list.peek();
     }
 }

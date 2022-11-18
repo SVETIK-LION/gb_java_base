@@ -1,10 +1,9 @@
 package task_2;
 
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.HashMap;
-import java.util.Map;
+import com.sun.source.tree.Tree;
+
+import java.util.*;
 
 
 /** Пусть дан список сотрудников: Иван, Пётр, Антон и так далее.
@@ -25,7 +24,9 @@ public class GetRepetitionsNames {
         employees.add("Петр");
 
         // Проверила, что получился список
-        System.out.println(employees);
+        System.out.printf("Исходный список: %s\n", employees);
+        repetitions(employees);
+
 
     }
 
@@ -36,12 +37,28 @@ public class GetRepetitionsNames {
         // Перебираем список и смотрим, есть ли такой сотрудник в словаре.
         // Если да, то прибавляем счетчик и записываем новые данные в значение словаря с данным иенем
         // Иначе: добавляем ключ - имя с нулевым значением
-        for(int i = 0; i < employees.size(); i++){
-            if(namesRepetitions.containsKey(employees.get(i))){
-                namesRepetitions.put(employees.get(i), namesRepetitions.???); // как получить увеличить значение на 1?
-            } else{
-                namesRepetitions.put(employees.get(i), 0);
+        for(String employee : employees) {
+            Integer Count = 1;
+            if(namesRepetitions.containsKey(employee)){
+                Count = namesRepetitions.get(employee);
+                namesRepetitions.put(employee, Count + 1);
+            } else {
+                namesRepetitions.put(employee, Count);
             }
         }
+        System.out.printf("Словарь с именами и количеством: %s\n", namesRepetitions);
+
+
+        SortedSet<Integer> values = new TreeSet<Integer>(namesRepetitions.values());
+        System.out.println(values);
+
+        List<Integer> mapValues = new ArrayList<Integer>(namesRepetitions.values());
+        Collections.sort(mapValues);
+        System.out.println(mapValues);
+
+        SortedSet<String> keys = new TreeSet<String>(namesRepetitions.keySet());
+        System.out.println(keys);
+
+
     }
 }

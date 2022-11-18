@@ -36,19 +36,11 @@ public class GetRepetitionsNames {
         // Перебираем список и смотрим, есть ли такой сотрудник в словаре.
         // Если да, то прибавляем счетчик и записываем новые данные в значение словаря с данным иенем
         for(int i = 0; i < employees.size(); i++){
-            if (namesRepetitions.containsKey(employees.get(i)) != employees.get(i)) {
-
-
+            if(namesRepetitions.containsKey(employees.get(i))){
+                namesRepetitions.put(employees.get(i), namesRepetitions.???); // как получить увеличить значение на 1?
+            } else{
+                namesRepetitions.put(employees.get(i), 0);
             }
-
-            else if(namesRepetitions.containsKey(employees.get(i)) == employees.get(i)){
-                namesRepetitions.put(employees.get(i), );
-            }
-
         }
-
-    }
-
-
     }
 }

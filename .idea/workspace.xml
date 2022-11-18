@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4f09cc3-ddfa-49bc-bfed-b2d96091ac1e" name="Changes" comment="task_1 is completed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_2/GetRepetitionsNames.java" afterDir="false" />
+    <list default="true" id="b4f09cc3-ddfa-49bc-bfed-b2d96091ac1e" name="Changes" comment="task_2 in work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task_2/GetRepetitionsNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task_2/GetRepetitionsNames.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668706860257</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="task_2 in work">
+      <created>1668766622869</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668766622869</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +128,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="task_1 is completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="task_1 is completed" />
+    <MESSAGE value="task_2 in work" />
+    <option name="LAST_COMMIT_MESSAGE" value="task_2 in work" />
   </component>
 </project>

@@ -45,11 +45,11 @@ public class Try {
 
         for (Map.Entry<String, Integer> item : namesRepetitions.entrySet()) {
             if (sortedNamesRepetitions.containsKey(item.getValue())){
-                List<String> names = new ArrayList<>();
+                sortedNamesRepetitions.put(item.getValue(), sortedNamesRepetitions.get(item.getKey()).add(item.getKey()));
+            } else {
+                List <String> names = new ArrayList<>();
                 names.add(item.getKey());
                 sortedNamesRepetitions.put(item.getValue(), names);
-            } else {
-                sortedNamesRepetitions.put(item.getValue(), Arrays.asList(item.getKey(), " "));
 
             }
         }

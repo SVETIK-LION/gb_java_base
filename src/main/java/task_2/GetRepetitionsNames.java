@@ -1,8 +1,6 @@
 package task_2;
 
 
-import com.sun.source.tree.Tree;
-
 import java.util.*;
 
 
@@ -13,7 +11,7 @@ import java.util.*;
 
 
 public class GetRepetitionsNames {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // Создаем список имен сотрудников
         List<String> employees = new ArrayList<>();
         employees.add("Иван");
@@ -25,40 +23,71 @@ public class GetRepetitionsNames {
 
         // Проверила, что получился список
         System.out.printf("Исходный список: %s\n", employees);
-        repetitions(employees);
+        Map<String, Integer> namesRepetitions = getRepetitionsNames(employees);
+        System.out.printf("Список имен с кол-вом повторений: %s\n", namesRepetitions);
+        Map<Integer, String> sortedNamesRepetitions = sortingByCounterDesc(namesRepetitions);
+        System.out.println("Список имен с количеством повторений, отсортированный по убыванию популярности: ");
+        printSortedNamesByCount(sortedNamesRepetitions);
 
 
     }
 
-    public static void repetitions(List <String> employees){
-        // Создаем словарь, в котором будут храниться имена сотрудников и количество повторений
+    // Считает имена и записывает в словарь {имя: счетчик}
+    private static Map<String, Integer> getRepetitionsNames(List<String> employees) {
         Map<String, Integer> namesRepetitions = new HashMap<>();
 
-        // Перебираем список и смотрим, есть ли такой сотрудник в словаре.
-        // Если да, то прибавляем счетчик и записываем новые данные в значение словаря с данным иенем
-        // Иначе: добавляем ключ - имя с нулевым значением
-        for(String employee : employees) {
-            Integer Count = 1;
-            if(namesRepetitions.containsKey(employee)){
-                Count = namesRepetitions.get(employee);
-                namesRepetitions.put(employee, Count + 1);
+        for (String employee : employees) {
+            if (namesRepetitions.containsKey(employee)) {
+                int count = namesRepetitions.get(employee);
+                namesRepetitions.put(employee, count + 1);
             } else {
-                namesRepetitions.put(employee, Count);
+                namesRepetitions.put(employee, 1);
             }
         }
-        System.out.printf("Словарь с именами и количеством: %s\n", namesRepetitions);
-
-
-        SortedSet<Integer> values = new TreeSet<Integer>(namesRepetitions.values());
-        System.out.println(values);
-
-        List<Integer> mapValues = new ArrayList<Integer>(namesRepetitions.values());
-        Collections.sort(mapValues);
-        System.out.println(mapValues);
-
-        SortedSet<String> keys = new TreeSet<String>(namesRepetitions.keySet());
-        System.out.println(keys);
-
-
+        return namesRepetitions;
     }
-}
+
+
+    private static Map<Integer, String> sortingByCounterDesc(Map<String, Integer> namesRepetitions) {
+        TreeMap<Integer, String> sortedNamesRepetitions = new TreeMap<>();
+
+        for (Map.Entry<String, Integer> item : namesRepetitions.entrySet()) {
+            sortedNamesRepetitions.put(item.getValue(), item.getKey());
+        }
+        System.out.printf("!!!Ключи одинаковые затираются: %s\n", sortedNamesRepetitions);
+        return sortedNamesRepetitions.descendingMap();
+    }
+
+//    // Пробовала так: меняем ключи и значения местами из предыдущего словаря, чтобы отсортировать
+    // Ключи затираются, поэтому нужно добавить список имен в значение ключа - счетчика
+    //Добавляла вместо строки список, если словарь уже содержит такой ключ. Но Arrays.asList не может принисать только 1
+    // значение, поставила туда еще пробел, но все равно не работает
+//private static Map<Integer, List<String>> sortingByCounterDesc(Map<String, Integer> namesRepetitions) {
+//    TreeMap<Integer, List<String>> sortedNamesRepetitions = new TreeMap<>();
+//
+//    for (Map.Entry<String, Integer> item : namesRepetitions.entrySet()) {
+//        if (sortedNamesRepetitions.containsKey(item.getValue())){
+//            List<String> names = new ArrayList<>();
+//            names.add(item.getKey());
+//            sortedNamesRepetitions.put(item.getValue(), names);
+//        } else {
+//            sortedNamesRepetitions.put(item.getValue(), Arrays.asList(item.getKey(), " "));
+//
+//        }
+//    }
+//    System.out.println(sortedNamesRepetitions);
+//    return sortedNamesRepetitions.descendingMap();
+//}
+
+    private static void printSortedNamesByCount(Map<Integer, String> sortedNamesRepetitions) {
+        Map<String, Integer> resultSortedNamesReps = new HashMap<>();
+
+        for(Map.Entry<Integer, String> item : sortedNamesRepetitions.entrySet()) {
+            resultSortedNamesReps.put(item.getValue(), item.getKey());
+        }
+
+        for(Map.Entry<String, Integer> pair : resultSortedNamesReps.entrySet()){
+            System.out.println(pair);
+        }
+        }
+    }

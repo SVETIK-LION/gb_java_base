@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4f09cc3-ddfa-49bc-bfed-b2d96091ac1e" name="Changes" comment="task_2 in work">
+    <list default="true" id="b4f09cc3-ddfa-49bc-bfed-b2d96091ac1e" name="Changes" comment="task_2 is completed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/task_3/HeapSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task_2/Try.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task_2/Try.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/SVETIK/IntelliJProjects/gb_java_base_2022&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.GetRepetitionsNames">
+  <component name="RunManager" selected="Application.HeapSort">
     <configuration name="GetRepetitionsNames" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="task_2.GetRepetitionsNames" />
       <module name="gb_java_base_2022" />
@@ -56,12 +56,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TelephoneBook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.svetik_lion.TelephoneBook" />
+    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task_3.HeapSort" />
       <module name="gb_java_base_2022" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.svetik_lion.*" />
+          <option name="PATTERN" value="task_3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HeapSort" />
         <item itemvalue="Application.GetRepetitionsNames" />
         <item itemvalue="Application.Try" />
         <item itemvalue="Application.task_2" />
         <item itemvalue="Application.task_1.TelephoneBook" />
-        <item itemvalue="Application.TelephoneBook" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668971588825</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="task_2 is completed">
+      <created>1669137196824</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669137196824</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +199,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="task_1 is completed" />
     <MESSAGE value="task_2 in work" />
-    <option name="LAST_COMMIT_MESSAGE" value="task_2 in work" />
+    <MESSAGE value="task_2 is completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="task_2 is completed" />
   </component>
 </project>

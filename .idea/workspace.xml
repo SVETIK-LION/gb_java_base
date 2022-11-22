@@ -38,10 +38,11 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/SVETIK/IntelliJProjects/gb_java_base_2022&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Try">
+  <component name="RunManager" selected="Application.GetRepetitionsNames">
     <configuration name="GetRepetitionsNames" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="task_2.GetRepetitionsNames" />
       <module name="gb_java_base_2022" />
@@ -108,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Try" />
         <item itemvalue="Application.GetRepetitionsNames" />
+        <item itemvalue="Application.Try" />
         <item itemvalue="Application.task_2" />
         <item itemvalue="Application.task_1.TelephoneBook" />
         <item itemvalue="Application.TelephoneBook" />
@@ -167,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668937692358</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="task_2 in work">
+      <created>1668971588825</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668971588825</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
